@@ -6,7 +6,7 @@
 <title>MetalMC's Store </title>
 <meta charset="utf-8">
 <meta name="description" content="Coldmonke's store"/>
-<link rel="stylesheet" type="text/css" href ="Store_style.css">
+<link rel="stylesheet" type="text/css" href ="store_style.css">
 <link rel="stylesheet" type="text/css" href ="MinecraftTen-VGORe">
 <link rel="stylesheet" href="Style_entete.css">
 <link rel="icon" href="real_logo.png">
@@ -20,7 +20,7 @@ copy word for word. Credits to RLRGC for making most of the website.-->
 <!-- Entête du site, liens -->
 <section id="entete">
 <a href="https://www.youtube.com/@coldmonke" class="BoutonBleu ">Coldmonke's youtube channel</a> 
-<a href="index.html" class="BoutonBleu">Home Page</a> 
+<a href="Index.html" class="BoutonBleu">Home Page</a> 
 <a href="https://discord.gg/qkkV9GaNgT" class="BoutonBleu">Join our community</a>
 </section>
 
@@ -41,70 +41,48 @@ continue working on it.
 
 
 <!--Shop -->
+<section id="Shop_center">
 <section id="shop">
 
 
 <!-- Metal rank -->
 <div class="Metal"> <!-- Change with logo when we have it -->
-<a href="Index_metal_rank.hmtl"target="blank"> Buy Metal Rank </a>
+<button type="button" onclick='document.getElementById("Metal Rank").innerHTML = "Hello JavaScript!"'>Metal Rank </br> 5.99$</button> <!--insert text by Coldmonke-->
 <br></br>
-<p>
-When you click on this page, 
-you will be able to chose between many cosmetics, </br>
-Once you bought them, staff will give it to you forever.
-<strong> Please enter either your discord username and tag or your Minecraft username. Otherwise, we cannot give you the Cosmetic.</strong>
+<p id="Metal Rank"></p>
+</div>
+
+<!-- Crystal rank -->
+<div class="Icon">
+    <button type="button" onclick='document.getElementById("Crystal Rank").innerHTML = "Hello JavaScript!"'>Crystal Rank </br> 9.99$</button> <!--insert text by Coldmonke-->
+
+<br></br>
+<p id="Crystal Rank">
 </p>
 </div>
-
-<!--Crystal rank -->
-<div class="crystal"> <!-- Change with logo when we have it -->
-    <a href="Index_crystal_rank.hmtl"target="blank"> Buy Crystal Rank </a>
-    <br></br>
-    <p>
-    When you click on this page, 
-    you will be able to chose between many cosmetics, </br>
-    Once you bought them, staff will give it to you forever.
-    <strong> Please enter either your discord username and tag or your Minecraft username. Otherwise, we cannot give you the Cosmetic.</strong>
-    </p>
-</div>
-
 
 <!-- Gem rank -->
 <div class="Gem">
-<a href="Index_gem_rank_html.html"target="blank">Buy Gem rank </a> <!-- Make gem page -->
+<button type="button" onclick='document.getElementById("Gem Rank").innerHTML = "Hello JavaScript!"'>Gem Rank </br> 14.99$</button> <!--insert text by Coldmonke-->
 <br></br>
-<p>
-If you wish to make a donation, click the link.</br>
- It will redirect you to a Paypal page. When you pay, it will be sent to the server to help it grow.
-<strong> Please enter either your discord username and tag or your Minecraft username. Otherwise, we cannot give you the donator rank. </strong>
+<p id="Gem Rank">
  </p>
 </div>
-
-<!-- Icon rank -->
-<div class="Icon">
-<a href="Index_icon_rank_html.html"target="blank">Buy Icon rank </a> 
-<br></br>
-<p>
-When you click on this page, 
-you will be able to chose between 3 ranks, each with its own perms and perks.</br>
-More info about them when you click on the "Info" link.
-<strong> Please enter either your discord username and tag or your Minecraft username. Otherwise, we cannot give you the rank.</strong>
-</p>
+<!--Icon rank-->
+<div class="crystal"> <!-- Change with logo when we have it -->
+<button type="button" onclick='document.getElementById("Icon Rank").innerHTML = "Hello JavaScript!"'>Icon Rank </br> 24.99$</button> <!--insert text by Coldmonke-->
+    <br></br>
+    <p id="Icon Rank">
+    </p>
 </div>
-
-
+</section>
 </section>
 
 
 
 <!--Bas de page-->
 <div id="Low-page">
-<p>
-Thanks for considering a purchase, if you wish to purchase anything, please note that you
-cannot yet get <strong> refunded </strong>.
-<BR>
-the staff team thanks you for the support.
-</P>
+<p></p>
 </div>
 
 <!-- Tout en bas de la page -->
