@@ -25,6 +25,10 @@ h2{
 	padding: 10px;
   }
   
+#Store{
+	background-color: rgba(255,255,255,0.2);
+}
+
 
 a{
 	Color:blue;
@@ -34,49 +38,26 @@ a:hover{
 	Color:aqua;
 }
 
-#shop{
+#Store{
 	display:flex;
 	background-color:rgba(255,255,255,0.2);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-#shop button{
+#Store button{
 	padding: 20px;
 	text-align: center;
 	font-size:20px;
 	color:white;
 }
-#shop p{
-	padding: 30px;
-	text-align: center;
-	font-size:15px;
-	color:white;
-}
+
+
 #Shop_Center{
 	text-align: center;
 }
 
-/* espacement entre article */
-.Metal{
-	text-align:center;
-	padding:20px;
-}
 
-.Icon{
-	text-align:center;
-	padding:20px;
-}
 
-.crystal{
-	text-align:center;
-	padding:20px;
-}
-
-.Gem{
-	text-align:center;
-	padding:20px;
-}
-/* Fin de partie espacement */
 
 #extra-info{
 	background:rgba(0,0,0,0.5);
@@ -112,65 +93,24 @@ a:hover{
 	font-family:consolas;
 	font-size:15px;
 }
-
-/*Boutons*/
-.Metal button{
+/*Store Style */
+.store{
+	display: flex;
+	padding: 30px;
+	text-align: center;
+	font-size:15px;
 	color:white;
-	border: 1px solid white;
-	padding:20px;
-	border-radius: 15px;
-	text-decoration:none;
-	transition: ease 1s;
-	background-color: rgba(9, 9, 9, 0.769);
 }
-.Metal button:hover{
-	color:white;
-	background-color:grey;
+.store details{
+	padding: 50px;
+	padding-left: 150px;
 }
-.Icon button{
-	color:black;
-	border: 1px solid white;
-	padding:20px;
-	border-radius: 15px;
-	text-decoration:none;
-	transition: ease 1s;
-	background-color: rgba(192, 192, 192);
-}
-.Icon button:hover{
-	color: white;
-	background-color:grey ;
-}
+/* store style done */
 
-.Gem button{
-	color:white;
-	border: 1px solid white;
-	padding:20px;
-	border-radius: 15px;
-	text-decoration:none;
-	transition: ease 1s;
-	background-color: green;
-}
+/*Bouton couleur*/
 
-.Gem button:hover{
-	color:white;
-	background-color:rgb(76, 200, 76);
-}
 
-.crystal button{
-	color:White;
-	border: 1px solid white;
-	padding:20px;
-	border-radius: 15px;
-	text-decoration:none;
-	transition: ease 1s;
-	background-color: purple;
-}
 
-.crystal button:hover{
-	color:white;
-	background-color:violet;
-}
-/*button*/
 /* Optimization */
 @media screen and (max-width: 414px) {
 	.buy{
