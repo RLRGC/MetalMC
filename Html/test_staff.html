@@ -20,9 +20,14 @@
         <a href="https://metalmc-pvp.tebex.io" class="BoutonBleu">Store</a> 
         <a href="https://discord.gg/ufMjPg5ZQH" class="BoutonBleu" target="_blank">Join our Community!</a>
     </section>
-    <div id="title">
+    <div id="Title">
+        <br>
         <h1 style="text-align: center;">Staff Page Punishement Logs</h1>
+        <div id="Logo">
+            <img src="../Images/real_logo.png" alt="Right logo ffs">
+        </div>
     </div>
+<section id="contenu">
     <div id="search-bar">
         <input type="text" placeholder="Rechercher par joueur" onkeyup="filterTable()">
     </div>
@@ -46,8 +51,9 @@
                 <td>1 hour</td>
                 <td>Spamming</td>
                 <td>Moderator1</td>
-                <td>Link to Proof</td>
-                <td>Java</td>
+                <td><video controls width="250" height="250">
+                    <source src="video" type="video/webm" /> proof</td>
+                <td>Discord</td>
             </tr>
             <tr>
                 <td>Player2</td>
@@ -56,8 +62,9 @@
                 <td>Permanent</td>
                 <td>Cheating</td>
                 <td>Moderator2</td>
-                <td>Link to Proof</td>
-                <td>Bedrock</td>
+                <td><video controls width="250" height="250">
+                    <source src="video" type="video/webm" /> proof</td>
+                <td>Minecraft</td>
             </tr>
             <!-- Replace the example rows with your actual data -->
             <tr>
@@ -72,6 +79,7 @@
             </tr>
         </table>
     </div>
+</section>
     <script>
         function filterTable() {
             var input, filter, table, tr, td, i, txtValue;
