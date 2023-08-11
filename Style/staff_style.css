@@ -9,6 +9,9 @@
     background-color: rgba(0,0,0,0.2);
 }
 
+html{
+    background-color : rgba(0, 0, 0, 0.8)
+}
 
 table {
     width: 100%;
@@ -23,10 +26,17 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+    color:black
 }
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
+    color:black
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(200,200,200);
+    color: black
 }
 
 input[type="text"] {
@@ -38,4 +48,14 @@ input[type="text"] {
 #search-bar {
     max-width: 300px;
     margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#Title{
+    background:url(../Images/background.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-size: 20px;
+    font-family:Consolas;
+    text-align:center;
 }
