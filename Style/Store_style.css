@@ -1,0 +1,169 @@
+Body{
+	background:rgba(20,20,20,0.9)
+}
+
+
+
+h1{
+	text-align:center;
+	Color:black;
+	font-family:Consolas;
+	font-size:30px;
+}
+
+h2{
+	text-align:center;
+	Color:black;
+	font-family:Consolas;
+	font-size:25px;
+}
+
+#BoutonsNavigation{
+	display: flex;
+	justify-content:space-around;
+	background-color: rgba(255,255,255,0);
+	padding: 10px;
+  }
+  
+
+
+a{
+	Color:blue;
+	padding:50px;
+}
+a:hover{
+	Color:aqua;
+}
+
+
+
+
+#Shop_Center{
+	text-align: center;
+}
+
+#Title{
+	background:url(../Images/background.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:black;
+	font-size: 20px;
+	font-family:Consolas;
+	text-align:center;
+
+}
+
+#logo{
+	background:url(../Images/real_logo.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color:white;
+	/* need to make image bigger */
+}
+
+#aboutus{
+	background-color: rgba(255,255,255,0.0);
+	padding: 10px;
+	color:Cyan;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#New{
+	background-color: rgba(255,255,255,0);
+	padding: 10px;
+	color:cyan;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+#New h3{
+
+	background-color: rgba(255,255,255,0);
+	padding-right: 50px;
+	padding-left: 25px;
+}
+
+#ExtraInfo h3{
+
+	padding-right: 50px;
+	padding-left: 25px;
+}
+
+#aboutus h3{
+
+	padding-right: 50px;
+	padding-left: 25px	;
+}
+
+
+
+.info{
+	display: flex;
+}
+
+
+#Contenu{
+	display: flex;
+	
+}
+
+#aboutus{
+
+	padding-right: 50px;
+	text-align: justify;
+	font-family: 'Tourney', sans-serif;
+}
+#aboutus h3{
+
+	text-align: center;
+	font-family: 'Tourney', sans-serif;
+}
+#New{
+
+	padding-right: 50px;
+	text-align: justify;
+	font-family: 'Tourney', sans-serif;
+}
+#New h3{
+
+	text-align: center;
+	font-family: 'Tourney', sans-serif;
+}
+
+
+/*Bas de page*/
+#bas_de_page{
+	background-image: linear-gradient(
+	rgba(100,100,100,1)	,
+	rgba(120, 120, 120, 1))	, url("");
+	padding: 15px;
+	text-align: center;
+	font-size: 20px;
+	top:0;
+	position: sticky;
+}
+#bas_de_page a{
+	color:aqua;
+	margin: 0 40px;
+	padding: 10px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#bas_de_page a.BoutonBleu:hover{
+	color:rgb(48, 48, 48);
+	background-color: aqua;
+}
+
+
+
+
+/* Optimization */
+@media screen and (max-width: 414px) {
+	.buy{
+		color: red;
+	}
+}

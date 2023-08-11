@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>MetalMC's Store </title>
+    <meta charset="utf-8"> <!--Charset (jsp ce que c'est)-->
+    <meta name="description" content="MetalMC"/> <!--Description-->
+    <link rel="stylesheet" type="text/css" href ="../Style/staff_style.css"> <!--Style de la page-->
+    <link rel="stylesheet" href="../Style/Style_entete.css" type="text/css"> <!--Style de l'entête-->
+    <link rel="icon" href="../Images/real_logo.png"> <!-- Logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Police de caractère-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Police de caractère-->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap" rel="stylesheet"> <!--Police de caractère-->
+    <script src="script_staff.js"></script> <!-- script (à venir)-->
+
+</head>
+
+<body>
+    <section id="entete">
+        <a href="https://www.youtube.com/@coldmonke" class="BoutonBleu ">MetalMC Content</a> 
+        <a href="https://metalmc-pvp.tebex.io" class="BoutonBleu">Store</a> 
+        <a href="https://discord.gg/ufMjPg5ZQH" class="BoutonBleu" target="_blank">Join our Community!</a>
+    </section>
+    <div id="titre">
+        <h1 style="text-align: center;"> Staff Page </h1>
+    </div>
+    <div id="recherche">
+        <label>Username</label>
+        <input type="text" id="Username" placeholder="Username" required>
+        <button onclick="search()">search</button>
+        <p id="reply"></p>
+    </div>
+
+    <div id="Punishement_list">
+        <table>
+            <thead>
+                <tr class="ligne">
+                <td style="border: 2px solid black"><p style="text-align: center;">Player</p></td>
+                <td style="border: 2px solid black"><p style="text-align: center;">Date</p></td>
+                <td style="border: 2px solid black"><p style="text-align: center;">Punishement</p></td>
+                <td style="border: 2px solid black"><p style="text-align: center;">Duration</p></td>
+                <td style="border: 2px solid black"><p style="text-align: center;">Reason</p></td>
+                <td style="border: 2px solid black"><p style="text-align: center;">Moderator</p></td>
+                <td style="border: 2px solid black"><p style="text-align: center;">Notes</p></td>
+                <td style="border: 2px solid black"><p style="text-align: center;">Platform</p></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="ligne">
+                    <td><p style="text-align: center;">placeholder</p></td>
+                    <td><p style="text-align: center;">dd/mm/yyyy</p></td>
+                    <td><p style="text-align: center;">Warn/mute/kick/ban</p></td>
+                    <td><p style="text-align: center;">xxx minutes/hours/days/months/years</p></td>
+                    <td><p style="text-align: center;">Hurt me</p></td>
+                    <td><p style="text-align: center;">RLRGC</p></td>
+                    <td><p style="text-align: center;">Proof : check discord</p></td>
+                    <td><p style="text-align: center;">Discord/MinecraftEU/MinecraftNA</p></td>
+                </tr>
+                <tr class="ligne" id="RLRGC">
+                    <td><p>RLRGC</p></td>
+                    <td><p>05/08/2023</p></td>
+                    <td><p>Warn</p></td>
+                    <td><p>Forever</p></td>
+                    <td><p>Testing</p></td>
+                    <td><p>Magicc</p></td>
+                    <td><p>Proof : check discord</p></td>
+                    <td><p>Discord</p></td>
+                </tr>
+                <tr class="ligne" id="!-supergunner">
+                    <td><p>!-supergunner</p></td>
+                    <td><p>05/08/2023</p></td>
+                    <td><p>Warn</p></td>
+                    <td><p>Forever</p></td>
+                    <td><p>Testing</p></td>
+                    <td><p>Magicc</p></td>
+                    <td><p>Proof : check discord</p></td>
+                    <td><p>Discord</p></td>
+                </tr>
+                <tr class="ligne" id="RLRGC">
+                    <td><p>RLRGC</p></td>
+                    <td><p>05/08/2023</p></td>
+                    <td><p>Warn</p></td>
+                    <td><p>Forever</p></td>
+                    <td><p>Testing</p></td>
+                    <td><p>Magicc</p></td>
+                    <td><p>Proof : check discord</p></td>
+                    <td><p>Discord</p></td>
+                </tr>
+                <tr class="ligne" id="RLRGC">
+                    <td><p>RLRGC</p></td>
+                    <td><p>05/08/2023</p></td>
+                    <td><p>Warn</p></td>
+                    <td><p>Forever</p></td>
+                    <td><p>Testing</p></td>
+                    <td><p>Magicc</p></td>
+                    <td><p>Proof : check discord</p></td>
+                    <td><p>Discord</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

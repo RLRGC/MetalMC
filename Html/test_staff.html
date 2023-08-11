@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Page</title>
+    <meta charset="utf-8"> <!--Charset (jsp ce que c'est)-->
+    <meta name="description" content="MetalMC"/> <!--Description-->
+    <link rel="stylesheet" type="text/css" href ="../Style/staff_style.css"> <!--Style de la page-->
+    <link rel="stylesheet" href="../Style/Style_entete.css" type="text/css"> <!--Style de l'entête-->
+    <link rel="icon" href="../Images/real_logo.png"> <!-- Logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Police de caractère-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Police de caractère-->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <section id="entete">
+        <a href="https://www.youtube.com/@coldmonke" class="BoutonBleu ">MetalMC Content</a> 
+        <a href="https://metalmc-pvp.tebex.io" class="BoutonBleu">Store</a> 
+        <a href="https://discord.gg/ufMjPg5ZQH" class="BoutonBleu" target="_blank">Join our Community!</a>
+    </section>
+    <div id="title">
+        <h1 style="text-align: center;">Staff Page Punishement Logs</h1>
+    </div>
+    <div id="search-bar">
+        <input type="text" placeholder="Rechercher par joueur" onkeyup="filterTable()">
+    </div>
+    <div id="punishement_table">
+        <table id="punishment-table">
+            <tr>
+                <th>Player</th>
+                <th>Date</th>
+                <th>Punishment</th>
+                <th>Duration</th>
+                <th>Reason</th>
+                <th>Moderator</th>
+                <th>Proof</th>
+                <th>Platform</th>
+            </tr>
+            <!-- Example rows (delete these when adding real data) -->
+            <tr>
+                <td>Player1</td>
+                <td>2023-08-06</td>
+                <td>Mute</td>
+                <td>1 hour</td>
+                <td>Spamming</td>
+                <td>Moderator1</td>
+                <td>Link to Proof</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>Player2</td>
+                <td>2023-08-06</td>
+                <td>Ban</td>
+                <td>Permanent</td>
+                <td>Cheating</td>
+                <td>Moderator2</td>
+                <td>Link to Proof</td>
+                <td>Bedrock</td>
+            </tr>
+            <!-- Replace the example rows with your actual data -->
+            <tr>
+                <td>RLRGC</td>
+                <td>2023-08-06</td>
+                <td>Ban</td>
+                <td>Permanent</td>
+                <td>Cheating</td>
+                <td>NotMagicc</td>
+                <td>Testing so no proof</td>
+                <td>Minecraft EU</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function filterTable() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.querySelector('#search-bar input');
+            filter = input.value.toUpperCase();
+            table = document.getElementById('punishment-table');
+            tr = table.getElementsByTagName('tr');
+
+            for (i = 1; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName('td')[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = '';
+                    } else {
+                        tr[i].style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
