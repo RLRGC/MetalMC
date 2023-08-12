@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Staff Page</title>
+    <title>MetalMC | Staff Page</title>
     <meta charset="utf-8"> <!--Charset (jsp ce que c'est)-->
     <meta name="description" content="MetalMC"/> <!--Description-->
     <link rel="stylesheet" type="text/css" href ="../Style/staff_style.css"> <!--Style de la page-->
@@ -13,6 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap" rel="stylesheet"> 
+    <script>
+        function afficherPage(){
+
+            let password_input = document.getElementById("password").value
+            let password = "mypassword"
+
+            if (password == password_input){
+                document.querySelector("#Private").style.display = "block";
+                document.getElementById("password").style.display = "none"
+
+            }
+
+}
+    </script>
 </head>
 <body>
     <section id="entete">
@@ -27,6 +41,12 @@
             <img src="../Images/real_logo.png" alt="Right logo ffs">
         </div>
     </div>
+   <div id="password">
+        <form>
+            <input type="password" placeholder="password" onkeyup="afficherPage()">
+        </form>
+   </div> 
+<div id="Private">
 <section id="contenu">
     <div id="search-bar">
         <input type="text" placeholder="Rechercher par joueur" onkeyup="filterTable()">
@@ -55,25 +75,25 @@
                 <td>Discord</td>
             </tr>
             <tr>
-                <td>Player2</td>
-                <td>2023-08-06</td>
-                <td>Ban</td>
-                <td>Permanent</td>
-                <td>Cheating</td>
-                <td>Moderator2</td>
-                <td><video controls width="250" height="250"><source src="video" type="video/webm" /> </video></td>
-                <td>Minecraft</td>
+                <td>NLCXD</td>
+                <td>12/08/2023</td>
+                <td>Mute</td>
+                <td>1 Hour</td>
+                <td>Spamming</td>
+                <td>Cactuso</td>
+                <td><a href="https://media.discordapp.net/attachments/1082059569078997082/1139950218616520884/image.png?width=1059&height=663">Proof</a></td>
+                <td>Minecraft & Discord</td>
             </tr>
             <!-- Replace the example rows with your actual data -->
             <tr>
+                <td>NLCXD</td>
+                <td>12/08/2023</td>
+                <td>Warn</td>
+                <td>7 Days</td>
+                <td>Interference in axe FFA </td>
                 <td>RLRGC</td>
-                <td>2023-08-06</td>
-                <td>Ban</td>
-                <td>Permanent</td>
-                <td>Cheating</td>
-                <td>NotMagicc</td>
-                <td>Testing so no proof</td>
-                <td>Minecraft EU</td>
+                <td>None</td>
+                <td>Minecraft</td>
             </tr>
         </table>
     </div>
@@ -99,5 +119,6 @@
             }
         }
     </script>
+</div>
 </body>
 </html>
