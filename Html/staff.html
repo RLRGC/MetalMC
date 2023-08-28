@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
     <title>MetalMC's Store </title>
     <meta charset="utf-8"> <!--Charset (jsp ce que c'est)-->
     <meta name="description" content="MetalMC"/> <!--Description-->
-    <link rel="stylesheet" type="text/css" href ="../Style/staff_style.css"> <!--Style de la page-->
+    <link rel="stylesheet" type="text/css" href ="../Style/Staff_style.css"> <!--Style de la page-->
     <link rel="stylesheet" href="../Style/Style_entete.css" type="text/css"> <!--Style de l'entête-->
     <link rel="icon" href="../Images/real_logo.png"> <!-- Logo-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Police de caractère-->
@@ -15,93 +13,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap" rel="stylesheet"> <!--Police de caractère-->
-    <script src="script_staff.js"></script> <!-- script (à venir)-->
-
+    <script src="Script_store_javascript.js"></script> <!-- script (à venir)-->
 </head>
 
+<!--Hello dev, This is MetalMC's code. You can use this if you need help making your own as long as you dont
+copy word for word.-->
 <body>
-    <section id="entete">
-        <a href="https://www.youtube.com/@coldmonke" class="BoutonBleu ">MetalMC Content</a> 
-        <a href="https://metalmc-pvp.tebex.io" class="BoutonBleu">Store</a> 
-        <a href="https://discord.gg/ufMjPg5ZQH" class="BoutonBleu" target="_blank">Join our Community!</a>
-    </section>
-    <div id="titre">
-        <h1 style="text-align: center;"> Staff Page </h1>
-    </div>
-    <div id="recherche">
-        <label>Username</label>
-        <input type="text" id="Username" placeholder="Username" required>
-        <button onclick="search()">search</button>
-        <p id="reply"></p>
-    </div>
+<!-- Entête du site, liens -->
+<section id="entete">
+    <a href="https://www.youtube.com/@coldmonke" class="BoutonBleu ">MetalMC Content</a> 
+    <a href="https://metalmc-pvp.tebex.io" class="BoutonBleu">Store</a> 
+    <a href="https://discord.gg/ufMjPg5ZQH" class="BoutonBleu" target="_blank">Join our Community!</a>
+</section>
 
-    <div id="Punishement_list">
-        <table>
-            <thead>
-                <tr class="ligne">
-                <td style="border: 2px solid black"><p style="text-align: center;">Player</p></td>
-                <td style="border: 2px solid black"><p style="text-align: center;">Date</p></td>
-                <td style="border: 2px solid black"><p style="text-align: center;">Punishement</p></td>
-                <td style="border: 2px solid black"><p style="text-align: center;">Duration</p></td>
-                <td style="border: 2px solid black"><p style="text-align: center;">Reason</p></td>
-                <td style="border: 2px solid black"><p style="text-align: center;">Moderator</p></td>
-                <td style="border: 2px solid black"><p style="text-align: center;">Notes</p></td>
-                <td style="border: 2px solid black"><p style="text-align: center;">Platform</p></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="ligne">
-                    <td><p style="text-align: center;">placeholder</p></td>
-                    <td><p style="text-align: center;">dd/mm/yyyy</p></td>
-                    <td><p style="text-align: center;">Warn/mute/kick/ban</p></td>
-                    <td><p style="text-align: center;">xxx minutes/hours/days/months/years</p></td>
-                    <td><p style="text-align: center;">Hurt me</p></td>
-                    <td><p style="text-align: center;">RLRGC</p></td>
-                    <td><p style="text-align: center;">Proof : check discord</p></td>
-                    <td><p style="text-align: center;">Discord/MinecraftEU/MinecraftNA</p></td>
-                </tr>
-                <tr class="ligne" id="RLRGC">
-                    <td><p>RLRGC</p></td>
-                    <td><p>05/08/2023</p></td>
-                    <td><p>Warn</p></td>
-                    <td><p>Forever</p></td>
-                    <td><p>Testing</p></td>
-                    <td><p>Magicc</p></td>
-                    <td><p>Proof : check discord</p></td>
-                    <td><p>Discord</p></td>
-                </tr>
-                <tr class="ligne" id="!-supergunner">
-                    <td><p>!-supergunner</p></td>
-                    <td><p>05/08/2023</p></td>
-                    <td><p>Warn</p></td>
-                    <td><p>Forever</p></td>
-                    <td><p>Testing</p></td>
-                    <td><p>Magicc</p></td>
-                    <td><p>Proof : check discord</p></td>
-                    <td><p>Discord</p></td>
-                </tr>
-                <tr class="ligne" id="RLRGC">
-                    <td><p>RLRGC</p></td>
-                    <td><p>05/08/2023</p></td>
-                    <td><p>Warn</p></td>
-                    <td><p>Forever</p></td>
-                    <td><p>Testing</p></td>
-                    <td><p>Magicc</p></td>
-                    <td><p>Proof : check discord</p></td>
-                    <td><p>Discord</p></td>
-                </tr>
-                <tr class="ligne" id="RLRGC">
-                    <td><p>RLRGC</p></td>
-                    <td><p>05/08/2023</p></td>
-                    <td><p>Warn</p></td>
-                    <td><p>Forever</p></td>
-                    <td><p>Testing</p></td>
-                    <td><p>Magicc</p></td>
-                    <td><p>Proof : check discord</p></td>
-                    <td><p>Discord</p></td>
-                </tr>
-            </tbody>
-        </table>
+
+<!-- Titre -->
+    <div id="Title">
+        <br>
+        <h1 style="font-family:Arial;font-weight:bold;">Welcome to MetalMC's official Website</h1>
+        <div id="Logo">
+            <img src="../Images/real_logo.png" alt="Right logo ffs">
+        </div>
     </div>
+    <section id="contenu" class="information">
+        <div id="Guide">
+            <h1>Metal Staff Guide</h1> <!--Copier coller le "Staff Guide"-->
+                We ask that you follow a few guidelines. First and foremost, it's important to keep <strong>player data confidential.</strong> This means not sharing players' personal information like email addresses, phone numbers, or IP addresses with anyone who doesn't need to know. We want to ensure that our players <strong>feel safe and secure </strong> on our server.<br>
+                
+                Next up, we ask that you act with maturity and professionalism at all times. This means avoiding conflicts and arguments, speaking respectfully to all players and staff members, and keeping a cool head in tough situations. We know things can get heated sometimes, but it's important to keep your cool and set a good example for other players.<br>
+                <br>
+                <br>
+                We believe that everyone deserves to be treated with <strong>respect</strong>, regardless of their rank or position on the server. This means avoiding any form of <u>discrimination, harassment, or bullying</u>. We're all here to have <strong>fun and enjoy the game,</strong> so let's do our best to create a welcoming and inclusive environment for everyone. <br>
+                
+                Lastly, we want to emphasize the importance of reporting <strong>all punishments</strong> to the discord channels and website provided by the management team. When issuing a punishment, make sure to provide a brief explanation of what happened and why the punishment was necessary. This helps us maintain transparency and accountability on the server. <br>
+                <ul>
+                - a staff member, you'll have access to various commands that allow you to manage players and their actions on the server. Some of the most commonly used commands include /mute, which prevents a player from sending messages in chat, and /tempban, which temporarily bans a player for a specified duration. Builders also have access to /buildworld, which allows them to build and create in a designated area of the server.<br>
+                
+                Overall, being a staff member on MetalMC is an important role that requires professionalism, maturity, and respect. We're so excited to have you on board and can't wait to see what you'll bring to the team! <br>
+                <strong>As a staff member, it's important to understand the various commands that are available to you in order to effectively manage players and keep the server running smoothly. Here's a more in-depth look at some of the most commonly used commands and when to use them: </strong><br><br>
+                
+                <li><strong>/mute </strong> - This command is used to prevent a player from sending messages in chat. You might use this command if a player is spamming chat, using inappropriate language, or otherwise breaking the rules. To use this command, type "/mute [player] [reason]" in the chat, replacing "[player]" with the name of the player you want to mute, and "[reason]" with a brief explanation of why the player is being muted. <br></li>
+                <br>
+                <li><strong>/tempmute</strong> - Similar to the /mute command, /tempmute allows you to temporarily mute a player for a specific duration of time. This command is useful if you want to give a player a warning before imposing a longer ban. To use this command, type "/tempmute [player] [duration] [reason]" in the chat, replacing "[player]" with the name of the player you want to mute, "[duration]" with the length of time you want to mute them for (e.g. "30m" for 30 minutes, "2h" for 2 hours, etc.), and "[reason]" with a brief explanation of why the player is being muted.</li> <br>
+                <li><strong>/kick </strong> - If a player is repeatedly breaking the rules or causing disruptions on the server, you might need to use the /kick command. This command will immediately remove a player from the server, forcing them to log back in to rejoin. To use this command, type "/kick [player] [reason]" in the chat, replacing "[player]" with the name of the player you want to kick, and "[reason]" with a brief explanation of why the player is being kicked. <br></li>
+                <br>
+                <li><strong>/tempban</strong> - In more serious cases, you might need to temporarily ban a player from the server. This command will prevent a player from logging in for a specified duration of time. To use this command, type "/tempban [player] [duration] [reason]" in the chat, replacing "[player]" with the name of the player you want to ban, "[duration]" with the length of time you want to ban them for, and "[reason]" with a brief explanation of why the player is being banned. <br></li>
+                <br>
+                <li><strong>/iptempban </strong> - If a player is using multiple accounts to evade punishment or cause trouble, you might need to use the /iptempban command to ban their IP address. This will prevent them from logging in with any account from the same IP address. To use this command, type "/iptempban [player] [duration] [reason]" in the chat, replacing "[player]" with the player you want to ban, "[duration]" with the length of time you want to ban it for, and "[reason]" with a brief explanation of why the IP address is being banned. <br></li>
+                
+                <li><strong>/alts</strong> - This command allows you to see if a player has multiple accounts on the server. Simply type "/alts [player]" in the chat, replacing "[player]" with the name of the player you want to check, and the server will display a list of all accounts associated with that player. <br></li>
+                <br>
+                </ul>
+                <strong>Commands that you have access to can vary depending on your rank.</strong></p>
+        </div>
+        <div id="Usage">
+            <h1> Use of the Website</h1> <!--Comment utiliser le Site-->
+            <p>This Website is used to log punishement, log Staff updates (in comming). <br>
+                <strong>To log punishements, </strong> you will have to go to the <u>punishement log page</u> <br>.
+                You will have to enter the <strong>Username</strong>, the <strong>Date</strong> of the punishement, the type of <strong>punishement</strong> (mute,ban,warn,kick), the <strong>Duration</strong>, <strong>YOUR username</strong>, <strong>The proof and platform.</strong>. <br>
+                <li>The Username is the Username of the player who was punished. The Minecraft Username if the punishement is on Minecraft and the Discord username + tag if the punishement is on Discord </li>
+                <li>The Date is the date (dd/mm/yyyy) where the player is punished. </li>
+                <li>The Punishement is the type of punishement that you give them. A Warn, a Mute, a kick or a ban.</li>
+                <li>The reason is a brief explanation why you punished/Warn the player so that other staff members know why you punished x player</li>
+                <li>The Moderator is your username so that Administrators or Owners know who punished a player.</li>
+                <li>The proof is an additionnal screenshot/video to show why you punished the player. If it's a link, you can simply write the link in the "Proof" category. If it isn't, send the Video/Image to RLRGC so that he can add it in.</li>
+                <li>The platform is to precise if it's on discord or Minecraft.</li>
+                <br>
+                <br>
+                <br>
+                <strong>To log Staff Changes</strong>, go to the <u>staff change</u> page. <br>
+                You will have to log the name of the person promoted, then the rank.<br>
+                If it's a demotion, you will need to add the reason behind the demotion. <br>
+                <strong>THIS IS FOR ADMINISTRATORS AND OWNERS ONLY.</strong>
+            </p>
+        </div>
+    </section>
 </body>
 </html>
